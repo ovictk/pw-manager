@@ -1,0 +1,874 @@
+body {
+  overflow-y: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #a9a9a9;
+  outline: 1px solid #0094ff;
+}
+.burgerBasic {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: none !important;
+}
+.burgerBasic * {
+  background: none;
+}
+.burgerBasic span {
+  display: block;
+  width: 80%;
+  height: 4px;
+  margin-top: 6px;
+  background: #d4b114;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+.burgerBasic span:hover {
+  background: #d4b114 !important;
+}
+.burger {
+  transition: .4s;
+}
+.burger span {
+  transform: rotate(0deg);
+  margin-top: 6px;
+}
+.burgerOpen {
+  transition: .4s;
+}
+.burgerOpen span {
+  margin-left: 3px;
+  width: 85%;
+}
+.burgerOpen #s2 {
+  display: none;
+}
+.burgerOpen #s1 {
+  margin-top: 15px;
+  transform: rotate(45deg);
+}
+.burgerOpen #s3 {
+  transform: rotate(-45deg);
+  margin-top: -4px;
+}
+.navApa {
+  position: absolute;
+  top: 35;
+  left: 0;
+  bottom: 20px;
+  margin: 1% 1% 1% 0%;
+  width: 10%;
+  background: #282828 !important;
+  border-radius: 0px 5px 5px 0px;
+  z-index: 14;
+}
+.navApa * {
+  background: none !important;
+}
+.navApa .holder {
+  padding: 10%;
+}
+.navApa .button {
+  border: none;
+  height: 36px !important;
+  margin: 5%;
+  margin-bottom: 0%;
+  width: 90%;
+  border-radius: 5px;
+  background: #464646 !important;
+  font-size: 16px;
+  line-height: 36px;
+  display: inline-block;
+}
+.navApa .button:hover {
+  background: #0094ff !important;
+}
+.navApa .mng {
+  margin: 5%;
+  border-radius: 5px;
+  width: 90%;
+  position: absolute;
+  height: 36px !important;
+  left: 0;
+  bottom: 0;
+  border: 2px solid #464646 !important;
+  cursor: pointer;
+}
+.navApa .mng:hover {
+  background: #464646 !important;
+}
+.selectorNav2 {
+  background-color: #464646 !important;
+  color: #0094ff;
+  border-bottom: 2px solid #0094ff !important;
+}
+.selectorNav2:hover {
+  letter-spacing: 5px;
+}
+.nav2 {
+  background: #282828 !important;
+  height: 35px;
+}
+.nav2 .buttons {
+  background: #282828 !important;
+  margin-left: 10%;
+  width: 90%;
+  height: 35px;
+  display: inline-block;
+}
+.nav2 .buttons .userAcc {
+  cursor: pointer;
+  margin: 3px;
+  float: right;
+  line-height: 22px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50px;
+  border: 2px solid #464646 !important;
+}
+.nav2 .buttons .userAcc span {
+  background: none;
+  margin-left: 8px;
+  margin-top: 14px;
+}
+.nav2 .buttons .userAcc span:hover {
+  background: none !important;
+}
+.nav2 .buttons .userAcc:hover {
+  background-color: #464646 !important;
+}
+.nav2 .buttons .dropDown {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+  float: right;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  display: inline-block;
+  margin: 1%;
+  margin-left: 0;
+  height: 150px;
+  width: 9%;
+  border-radius: 10px;
+}
+.nav2 .buttons .dropDown:hover * {
+  letter-spacing: 0;
+}
+.nav2 .buttons .dropDown #dDHead {
+  background: #282828 !important;
+  border-radius: 10px;
+  font-size: 22px;
+  text-align: center;
+  height: 80px;
+  line-height: 75px;
+}
+.nav2 .buttons .dropDown #set {
+  height: 35px;
+  width: 100%;
+}
+.nav2 .buttons .dropDown #logout {
+  cursor: pointer;
+  border-radius: 0px 0px 20px 20px;
+  height: 35px;
+  width: 100%;
+  background: #9c2b2b;
+  border: none;
+}
+.nav2 .buttons div {
+  background: #282828;
+}
+.nav2 .buttons div .linksCategorys:hover {
+  letter-spacing: 5px;
+}
+.infoBar {
+  background-color: #3a3a3a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+.infoBar span {
+  background: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.IBupdated {
+  background-color: #3fd87f;
+}
+.overlayConfig {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.out {
+  animation: fadeOut 1s linear;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.753) !important;
+  animation: fadeIn 1s linear;
+}
+.ovCt_conf {
+  width: 98%;
+  background: none !important;
+  padding: 1%;
+}
+.overlayContent {
+  animation: fadeIn 1s linear;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  width: 60%;
+  height: 70%;
+  z-index: 110;
+  background: #444 !important;
+  border-radius: 5px;
+}
+.overlayContent .olCtHeader {
+  border-bottom: 1px solid #fff !important;
+  height: 8%;
+  width: 98%;
+  background: none !important;
+  padding: 1%;
+}
+.overlayContent .olCtHeader span {
+  display: inline-block;
+  margin: 2%;
+  width: 20%;
+  font-size: larger;
+}
+.overlayContent .olCtHeader span:hover {
+  background: none !important;
+}
+.overlayContent .olCtHeader .exit {
+  cursor: pointer;
+  margin: 1%;
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+.overlayContent .olCtHeader .exit svg {
+  fill: #fff;
+  height: 25px !important;
+}
+.overlayContent .olCtHeader .exit:hover {
+  transition: 0.4s;
+  border: 1px solid #f03535 !important;
+  animation: 0.5s spin cubic-bezier(0,0,0,0.99);
+}
+.overlayContent .olCtHeader .exit:hover svg {
+  fill: #f03535;
+  animation: 0.5s spin cubic-bezier(0,0,0,0.99);
+}
+.overlayContent .olCtBody {
+  width: 98%;
+  background: none !important;
+  padding: 1%;
+  max-height: 80% !important;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.overlayContent .olCtFooter {
+  border-top: 1px solid #fff !important;
+  height: 8%;
+  width: 98%;
+  background: none !important;
+  padding: 1%;
+}
+.overlayContent .olCtFooter input {
+  width: 140px;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  padding: 5px;
+}
+.overlayContent .olCtFooter select {
+  width: 120px;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  padding: 5px;
+}
+.overlayContent .olCtFooter #addnF {
+  width: 30px;
+  height: 30px;
+  border: solid 2px #0094ff !important;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.overlayContent .olCtFooter #addnF:hover {
+  background: #0094ff;
+}
+.overlayContent #addAccount {
+  border-radius: 5px;
+}
+.overlayContent #addAccount .olCtBody {
+  width: 98%;
+  background: none !important;
+  padding: 1%;
+  height: 80%;
+}
+.overlayContent #addAccount .olCtBody table {
+  width: 100%;
+}
+.overlayContent #addAccount .olCtBody table tr {
+  height: 35px;
+}
+.overlayContent #addAccount .olCtBody table .dataType {
+  width: 10%;
+}
+.overlayContent #addAccount .olCtBody table .dataValue {
+  width: 80%;
+}
+.overlayContent #addAccount .olCtBody table .dataValue .selc {
+  border-bottom: 1px solid #0094ff !important;
+}
+.overlayContent #addAccount .olCtBody table .dataValue input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  padding: 5px;
+}
+.overlayContent #addAccount .olCtBody table .dataValue select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+  padding: 5px;
+}
+.overlayContent #addAccount .olCtBody table .dataValue textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+.overlayContent #addAccount .olCtBody table .genButtons button {
+  margin: 1%;
+  width: 98%;
+  border: 2px solid #282828 !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.overlayContent #addAccount .olCtBody table .genButtons button:hover {
+  background: #282828 !important;
+}
+.overlayContent #addAccount .send {
+  float: right;
+  margin: 1%;
+  background: none !important;
+  border: solid 2px #3a813f !important;
+}
+.overlayContent #addAccount .send:hover {
+  background: #3a813f !important;
+}
+.overlayContent #attr_mng {
+  border-radius: 5px;
+}
+.overlayContent #attr_mng .attrList {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.overlayContent #attr_mng .attrList .attrS {
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 10px;
+  text-align: left;
+  width: 90%;
+  height: 30px;
+  border: 2px solid #282828 !important;
+}
+.overlayContent #attr_mng .attrList .deleteAttr {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 1%;
+  width: 8%;
+  height: 30px;
+  background: #e03c3c !important;
+  border: 2px solid #464646 !important;
+  animation: 0.2s linear attrDeleteShow;
+}
+.overlayContent #attr_mng .attrTools {
+  width: 19%;
+  height: 100%;
+  display: inline-block;
+}
+.overlayContent #attr_mng table {
+  height: 80%;
+  width: 100%;
+}
+.overlayContent #attr_mng table #left {
+  width: 80%;
+}
+.overlayContent #attr_mng #newAttrName {
+  width: 20%;
+  height: 30px;
+  padding-left: 5px;
+  border: 2px solid #282828 !important;
+  border-radius: 5px;
+  outline: none;
+}
+.overlayContent #attr_mng .addAttrNew {
+  margin-left: 1%;
+  width: 10%;
+  height: 30px;
+}
+.apaContent {
+  animation-delay: 2s;
+  animation: fadeIn 1s linear;
+  width: 78%;
+  margin-left: 10%;
+  padding: 1%;
+}
+.apaContent .sectionContent {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.apaContent .sectionContent .header {
+  border-radius: 5px;
+  background: #222222 !important;
+  height: 70px;
+}
+.apaContent .sectionContent .header .headerTitle {
+  display: inline-block;
+  width: 98%;
+  padding: 1%;
+  background: none !important;
+}
+.apaContent .sectionContent .header .headerTitle p {
+  width: 10%;
+  font-size: 22px;
+  background: none !important;
+  display: inline-block;
+}
+.apaContent .sectionContent .header .headerTitle button {
+  margin-left: 0;
+  float: right;
+  width: 50px;
+  height: 30px;
+}
+.apaContent .sectionContent .header .headerTitle .add {
+  background: #3a813f !important;
+}
+.apaContent .sectionContent .header .headerTitle .add:hover {
+  background: #44974a !important;
+}
+.apaContent .sectionContent .items {
+  position: relative;
+  max-height: 82%;
+  overflow-y: scroll;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 3px solid #3b3b3b !important;
+}
+.apaContent .sectionContent .items .item {
+  border-radius: 5px;
+  margin: 10px;
+  background: #222222 !important;
+}
+.apaContent .sectionContent .items .item div {
+  padding: 10px;
+  background: none !important;
+}
+.apaContent .sectionContent .items .item table {
+  background: none !important;
+  padding: 10px;
+}
+.apaContent .sectionContent .items .item table tr {
+  background: none !important;
+}
+.apaContent .sectionContent .items .item table td {
+  background: #222222 !important;
+}
+.apaContent .sectionContent .items .item table .itemData {
+  padding-left: 10px;
+  min-width: 200px;
+}
+.apaContent .sectionContent .items .item table .quickCopy {
+  margin-left: 10px;
+  width: 50px;
+  height: 26px;
+  border: 2px solid #464646 !important;
+  background: #282828 !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.apaContent .sectionContent .items .item table .quickCopy:hover {
+  background: #464646 !important;
+}
+.apaContent .sectionContent .items .item .groupData {
+  font-size: 18px;
+}
+.apaContent .sectionContent .items .item .interact {
+  min-height: 30px;
+}
+.apaContent .sectionContent .items .item .interact .viewData {
+  float: right;
+  border: solid 2px #0094ff !important;
+  background: none !important;
+}
+.apaContent .sectionContent .items .item .interact .viewData:hover {
+  background: #0094ff !important;
+}
+.timer30::after {
+  animation: 30s time30s linear infinite;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #0fad37;
+}
+.timer30:hover {
+  background: none !important;
+}
+.apa_acc {
+  width: 80%;
+  margin: 10%;
+  margin-top: 1%;
+}
+.apa_acc .backAPA {
+  display: inline-block;
+  border: 2px solid #282828;
+  background-color: #282828;
+}
+.apa_acc .backAPA:hover {
+  background-color: #464646;
+}
+.apa_acc #authGoogle {
+  margin-left: 25px;
+  display: inline-block;
+  margin-top: 20px;
+  background: #444;
+  color: #ddd;
+  width: 120px;
+  height: 50px;
+}
+.apa_acc #authGoogle:hover {
+  background: #464646 !important;
+}
+.apa_acc #authGoogle span {
+  display: block;
+  text-align: center;
+  padding: 13px 0 13px 0;
+  font-size: 20px;
+}
+.apa_acc #auth {
+  margin-left: 25px;
+  display: inline-block;
+  margin-top: 20px;
+  background: #444;
+  color: #ddd;
+  width: 120px;
+  height: 50px;
+}
+.apa_acc #auth:hover {
+  background: #464646 !important;
+}
+.apa_acc #auth span {
+  display: block;
+  text-align: center;
+  padding: 13px 0 13px 0;
+  font-size: 20px;
+}
+.apa_acc table {
+  margin: 2%;
+}
+.apa_acc table .itemData {
+  margin-left: 10px;
+  width: 100%;
+}
+.apa_acc table .itemData .formatAcc {
+  resize: none;
+  outline: none;
+  width: 90%;
+  height: 30px;
+  padding-left: 5px;
+  border: 2px solid #282828;
+  border-radius: 5px;
+}
+.apa_acc table .itemData .addedCopy {
+  width: 79% !important;
+}
+.apa_acc table .itemData .accountDataCopy {
+  display: inline-block;
+  border: 2px solid #0094ff !important;
+  padding: 5px;
+  border-radius: 5px;
+  width: 10%;
+  margin-left: 1%;
+}
+.apa_acc table .itemData .accountDataCopy:hover {
+  background: #0094ff !important;
+}
+.apa_acc table .itemData textarea {
+  height: 200px !important;
+}
+.apa_acc .deleteAcc {
+  margin-left: 15px;
+  background: #cc3e3e !important;
+}
+.apa_acc .deleteAcc:hover {
+  background: #f05050 !important;
+}
+.accountData {
+  padding: 5%;
+}
+.accountData #userPass {
+  margin: 1% 0 1% 0;
+}
+.accountData #submAD {
+  width: 240px;
+}
+.shadowHover:hover {
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.94);
+}
+.fadeOut {
+  animation: fadeOut 0.2s linear;
+  opacity: 0;
+  overflow: hidden;
+}
+.fadeOut * {
+  overflow: hidden;
+}
+.fadeIn {
+  animation: fadeIn 0.2s linear;
+  opacity: 1;
+  z-index: 0;
+}
+.off {
+  display: none;
+}
+.msg {
+  z-index: 100;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 40px;
+  height: 50px;
+  border-radius: 5px;
+  width: 60%;
+}
+.msg #typeMsgContent {
+  width: 100%;
+  border-radius: 5px;
+  height: 46px;
+  color: #ddd;
+}
+.msg #typeMsgContent .typeMsgText {
+  display: inline-block;
+  margin: 14px 15px 16px 15px;
+}
+.typeMsg::after {
+  display: block;
+  content: '';
+  height: 4px;
+  border-radius: 0 0 5px 5px;
+  background: #c7c7c7;
+}
+.typeMsgAnimation::after {
+  animation: 10s after10sClose linear;
+}
+.msgOpen {
+  animation: .4s slideIn cubic-bezier(0,0,0.06,0.99);
+}
+.msgClose {
+  transform: translateY(300%);
+  animation: .4s slideOut cubic-bezier(0,0,0.06,0.99);
+}
+.closeMsg {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.closeMsg svg {
+  width: 24px;
+  height: 24px;
+  fill: #ddd;
+}
+.closeMsg svg path {
+  width: 24px;
+  height: 24px;
+  fill: #ddd;
+}
+.error {
+  background: #f02d2d !important;
+}
+.error * {
+  background: #f02d2d !important;
+}
+.warning {
+  background: #d57009 !important;
+}
+.warning * {
+  background: #d57009 !important;
+}
+.success {
+  background: #11a54a !important;
+}
+.success * {
+  background: #11a54a !important;
+}
+.info {
+  background: #1e56f0 !important;
+}
+.info * {
+  background: #1e56f0 !important;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes attrDeleteShow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8%;
+  }
+}
+@keyframes time30s {
+  0% {
+    width: 100%;
+    margin-left: 0%;
+  }
+  50% {
+    background: #fff022;
+  }
+  100% {
+    width: 0%;
+    margin-left: 50%;
+    background: #e14;
+  }
+}
+@keyframes after10sClose {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .msg {
+    left: 5%;
+    right: 5%;
+    bottom: 40px;
+    height: 50px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .burgerBasic {
+    display: block;
+  }
+  .navApa {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .overlayContent {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    height: 90%;
+  }
+  .overlayContent .addAccount .olCtHeader span {
+    width: 80%;
+  }
+  .overlayContent #attr_mng #newAttrName {
+    width: 80%;
+  }
+  .overlayContent #attr_mng .addAttrNew {
+    width: 18%;
+  }
+  .apaContent {
+    width: 98%;
+    margin-left: 0%;
+  }
+  .apaContent .sectionContent {
+    z-index: 10;
+  }
+  .apaContent .sectionContent .items {
+    overflow-y: hidden;
+  }
+  .apaContent .sectionContent .items .item table {
+    width: 100%;
+  }
+  .apaContent .sectionContent .items .item table .itemData {
+    padding-left: 10px;
+    max-width: 50px;
+  }
+  .apaContent .sectionContent .items .item table .quickCopy {
+    float: right;
+  }
+  .apaContent .sectionContent .interact .viewData {
+    width: 100%;
+    float: right;
+    border: solid 2px #0094ff !important;
+    background: none !important;
+  }
+  .apaContent .sectionContent .interact .viewData:hover {
+    background: #0094ff !important;
+  }
+  .dropDown {
+    position: static;
+    z-index: 5;
+  }
+  .fadeOut {
+    display: none;
+  }
+}

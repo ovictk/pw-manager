@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.15",
+        "leafo/lessphp": "^0.5.0"
+    }
+}

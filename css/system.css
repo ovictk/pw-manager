@@ -1,0 +1,565 @@
+html {
+	transition: .2s;
+}
+.darkmode * {
+	transition: .2s;
+	background: #464646;
+	color: #fff;
+	border-color: #282828 !important;
+}
+.darkmode input[type="text"]:hover {
+	background: #343434;
+}
+.darkmode a:hover {
+	/* background: #343434; */
+}
+.darkmode input[type="password"]:hover {
+	background: #343434;
+}
+.darkmode input[type="submit"]:hover {
+	background: #343434;
+}
+.darkmode span:hover {
+	/* background: #343434 !important; */
+}
+/* EXTRA CONFIGGURATIONS */
+.txtCenter {
+	text-align: center !important;
+}
+.txtUnderline {
+	text-decoration: underline !important;
+}
+.width1 {
+	width: 80px !important;
+}
+.width2 {
+	width: 120px !important;
+}
+.width3 {
+	width: 180px !important;
+}
+.height1 {
+	height: 30px !important;
+}
+.height2 {
+	height: 40px !important;
+}
+.height3 {
+	height: 50px !important;
+}
+.basicTextInput {
+	outline: none !important;
+	height: 30px !important;
+	width: 240px !important;
+	border: none !important;
+	transition: .2s !important;
+}
+
+/* DEFAULT CONFIG CLASSES */
+/* DEFAULT CONFIG CLASSES */
+/* DEFAULT CONFIG CLASSES */
+/* DEFAULT CONFIG CLASSES */
+/* DEFAULT CONFIG CLASSES */
+.def {
+	cursor: pointer;
+	transition: .2s;
+	border-radius: 5px;
+	width: 120px;
+	background: #3b48e1;
+	border: none;
+	height: 30px;
+}
+.def:hover {
+	background: #5d69fb !important;
+}
+.quit {
+	cursor: pointer;
+	transition: .2s;
+	border-radius: 5px;
+	width: 120px;
+	background: #d74242;
+	border: none;
+	height: 30px;
+}
+.quit:hover {
+	background: #ed5353;
+}
+.suc {
+	cursor: pointer;
+	transition: .2s;
+	border-radius: 5px;
+	width: 120px;
+	background: #17c354;
+	border: none;
+	height: 30px;
+}
+.suc:hover {
+	background: #2ee16d;
+}
+
+/* TEXT 1 INPUT */
+.text1 {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: 1px solid #8e8e8e;
+	border-radius: 5px;
+	transition: .2s;
+	padding: 2px;
+}
+.text1:hover {
+	background: #e3e3e3;
+}
+.text1cBrd {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: 1px solid #8e8e8e;
+	border-radius: 5px;
+	transition: .2s;
+	padding: 2px;
+}
+.text1cBrd:hover {
+	background: #e3e3e3;
+}
+.text1cAll {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: 1px solid #8e8e8e;
+	border-radius: 5px;
+	transition: .2s;
+	padding: 2px;
+}
+.text1cAll:hover {
+	background: #e3e3e3;
+}
+
+/* TEXT 2 INPUT */
+.text2 {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: none;
+	border-bottom: 1px solid #8e8e8e;
+	transition: .2s;
+	padding: 2px;
+}
+.text2:hover {
+	background: #e3e3e3;
+}
+.text2cBrd {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: none;
+	border-bottom: 1px solid #8e8e8e;
+	transition: .2s;
+	padding: 2px;
+}
+.text2cBrd:hover {
+	background: #e3e3e3;
+}
+.text2cAll {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	border: none;
+	border-bottom: 1px solid #8e8e8e;
+	transition: .2s;
+	padding: 2px;
+}
+.text2cAll:hover {
+	background: #e3e3e3;
+}
+
+/* SEARCH 1 CONTAINERS */
+.search1 input[type="text"] {
+	outline: none;
+	height: 30px;
+	width: 240px;
+	transition: .2s;
+	border: none;
+	padding: 2px;
+	border-radius: 5px 0px 0px 5px;
+	border: 1px solid #8e8e8e;
+	border-right: none;
+}
+.search1 input[type="submit"] {
+	cursor: pointer;
+	outline: none;
+	height: 30px;
+	width: 81px;
+	transition: .2s;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	border-right: none;
+	background: #3b48e1;
+}
+.search1 input[type="submit"]:hover {
+	background: #5d69fb;
+}
+.search1resText {
+	border-radius: 5px 0px 0px 0px !important;
+}
+.search1resSubmit {
+	border-radius: 0px 5px 0px 0px !important;
+}
+.search1 .results1 {
+	width: 320px;
+	min-height: 35px;
+	border-radius: 0px 0px 5px 5px;
+	border: 1px solid #8e8e8e;
+	border-top: none;
+}
+.search1 .results1 a {
+	text-decoration: none;
+	color: #000;
+}
+.search1 .results1 a span {
+	transition: .2s;
+	display: block;
+	width: 310px;
+	height: 35px;
+	border: none;
+	border-top: 1px solid #8e8e8e;
+	line-height: 36px;
+	padding-left: 10px;
+}
+.search1 .results1 a span:hover {
+	background: #cfcfcf;
+}
+
+/* NAV 1 */
+
+/* DEFAULT */
+.selectorNav1 {
+	background: #00ff89;
+}
+.nav1 {
+	background: #707070;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	background: #d8d8d8;
+}
+.inner {
+  background: #a5a5a5;
+}
+.navExt {
+  background: #6c6c6c;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.button {
+	transition: .4s;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.button:hover {
+  background: #959595;
+}
+#l1:checked ~ .contentNav1 { 
+  max-height: 300px;
+}
+
+/* BORDER-RIGHT */
+.selectorNav1Brd {
+	border-right: 3px solid#00ff89;
+}
+.nav1Brd {
+	background: #707070;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	background: #d8d8d8;
+}
+.inner {
+  background: #a5a5a5;
+}
+.navExt {
+  background: #6c6c6c;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.button {
+	transition: .4s;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.button:hover {
+  background: #959595;
+}
+#l1:checked ~ .contentNav1 { 
+  max-height: 300px;
+}
+
+/* NAV 2 */
+.selectorNav2 {
+	background-color: #777777;
+}
+.nav2 {
+	width: 100%;
+	height: 35px;
+}
+.nav2 .buttons a {
+	width: 230px;
+	text-decoration: none;
+}
+.nav2 .buttons a div {
+	line-height: 36px;
+	width: 120px;
+	height: 35px;
+	border: none;
+	text-align: center;
+	display: inline-block;
+}
+.nav2 .buttons a div:hover {
+	letter-spacing: 5px;
+}
+/* LOGIN 1 */
+.login1 {
+	border-radius: 5px;
+	position: absolute;
+	top: 30%;
+	right: 35%;
+	left: 35%;
+	bottom: 30%;
+	background: #777777bf;
+}
+.login1 input {
+	margin: 2%;
+	width: 96%;
+	border: none;
+}
+.login1 input[type="submit"] {
+	position: absolute;
+	bottom: 0;
+}
+
+/* LOGIN 2 */
+.login {
+	border-radius: 5px;
+	position: absolute;
+	top: 20%;
+	bottom: 20%;
+	left: 37.5%;
+	right: 37.5%;
+	border: 1px solid #c5c5c5db;
+}
+#title_login {
+	text-align: center;
+	letter-spacing: 2px;
+}
+.inputsParent {
+	margin-left: 10px;
+}
+.nameField {
+	margin-top: 30px;
+}
+.passField {
+	margin-top: 20px;
+}
+.loginInputs {
+	outline: none;
+	border: none;
+	border-bottom: 2px solid;
+	height: 30px;
+	width: 95%;
+	background: #c5c5c517;
+	border-bottom: 1px solid #000;
+}
+.usernameLabel {
+	background-color: none !important;
+	position: absolute;
+	transition: 0.2s;
+}
+.passwordLabel {
+	position: absolute;
+	transition: 0.2s;
+}
+.filled {
+	color: #fff;
+}
+.down {
+	font-size: 14px;
+	transform: translateY(150%);
+}
+.up {
+	color: #000000;
+	font-size: 12px;
+	transform: translateY(0%);
+}
+.submitLogin {
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 25px;
+	margin-left: 5px;
+	width: 95%;
+	height: 30px;
+	outline: none;
+	border: none;
+	background: #5cbb70;
+	transition: 0.3s;
+	/*&:hover {*/
+		/*background: #6dd984;*/
+	/*}*/
+}
+
+
+/* STATUS */
+/* STATUS */
+/* STATUS */
+/* STATUS */
+/* STATUS */
+
+/* TEXT 1 STATUS */
+.text1Brd_right_green {
+	transition: .2s;
+	border: 1px solid #17c354 !important;
+}
+.text1Brd_right_red {
+	transition: .2s;
+	border: 1px solid #d74242 !important;
+}
+.text1All_right_green {
+	transition: .2s;
+	border: 1px solid #17c354 !important;
+	background: #00ff4d61 !important;
+}
+.text1All_right_red {
+	transition: .2s;
+	border: 1px solid #d74242 !important;
+	background: #ff000047 !important;
+}
+
+
+/* TEXT 2 STATUS */
+.text2Brd_right_green {
+	transition: .2s;
+	border-right: 3px solid #17c354 !important;
+}
+.text2Brd_right_red {
+	transition: .2s;
+	border-right: 3px solid #d74242 !important;
+}
+.text2All_right_green {
+	transition: .2s;
+	border-right: 3px solid #17c354 !important;
+	background: #00ff4d61 !important;
+}
+.text2All_right_red {
+	transition: .2s;
+	border-right: 3px solid #d74242 !important;
+	background: #ff000047 !important;
+}
+
+
+/* SEARCH OPEN AND CLOSE */
+.out {
+	position: absolute;
+	transition: .2s !important;
+	height: 0px !important;
+	min-height: 0px !important;
+	border: none !important;
+	opacity: 0;
+}
+.out a {
+	visibility: hidden;
+	transition: .2s !important;
+	opacity: 0;
+}
+.in {
+	position: absolute;
+	background: #fff;
+	transition: .2s !important;
+	min-height: 35px;
+	opacity: 1;
+}
+.in a {
+	background: #fff;
+	visibility: visible;
+	transition: .2s !important;
+	opacity: 1;
+}
+
+
+
+
+
+
+.content {
+	position: absolute;
+	top: 0;
+	left: 20%;
+	right: 0;
+	bottom: 0;
+	background: #d8d8d8;
+}
+.navExt {
+  background: #6c6c6c;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.button {
+	transition: .4s;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.button:hover {
+  background: #959595;
+}
+#l1:checked ~ .contentNav1 { 
+  max-height: 300px;
+}
+
+.typeMsgText {
+	width: calc(100% - 76px) !important;
+}
+
+/* SIZING ON ALL DEVICES */
+@media only screen and (max-width: 600px) {
+  
+}
