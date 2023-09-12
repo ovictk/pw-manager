@@ -8,9 +8,9 @@ and extended with the Composer PHP Library
 
 You have to add an User Account inside MongoDB, you need this fields
 color: "#e14"
-pass: "kroTI2002"
-reg_date: "16.11.2022"
-user: "timkrm"
+pass: "_PASSWORD_"
+reg_date: "_dd.mm.yyyy_"
+user: "_USERNAME_"
 total_acc: "0"
 attr: Array 
      0: "Email"
