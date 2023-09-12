@@ -18,6 +18,7 @@ inside the categories you can add accounts which contains
 - Notes
 
 You can add own fields with own tags and given input types also TFA generator and Steam TFA generator
+The changes and edits you see instantly with help of JQuery - AJAX  
 
 Of course you can delete a single account or a category
    _  
